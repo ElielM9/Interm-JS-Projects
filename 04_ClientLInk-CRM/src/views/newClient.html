@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientLink | Nuevo cliente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+      <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-purple-500 px-5 py-10">
+        <h1 class="uppercase text-white tracking-wide text-2xl font-bold mt-2">
+          ClientLink
+        </h1>
+        <p class="mt-10 text-white">Administra tus clientes</p>
+        <nav class="mt-8">
+          <a
+            href="index.html"
+            class="rounded px-3 py-1 text-white block hover:bg-purple-700 transition-colors duration-700 ease-in-out"
+            >Clientes</a
+          >
+          <a
+            href="newClient.html"
+            class="mt-2 rounded px-3 py-1 text-white block hover:bg-purple-700 transition-colors duration-700 ease-in-out"
+            >Nuevo Cliente</a
+          >
+        </nav>
+      </aside>
+      <!--sidebar-->
+      <main class="md:w-3/5 xl:w-4/5 px-5 py-10 bg-gray-200">
+        <h2 class="text-3xl font-light text-center">Nuevo Cliente</h2>
+
+        <div class="flex flex-col mt-10 items-center">
+          <div
+            class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12"
+          >
+            <div
+              class="shadow overflow-hidden sm:rounded-lg border-b border-gray-200"
+            >
+              <form id="form" class="bg-white p-3">
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="name"
+                  >
+                    Nombre
+                  </label>
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Ingresar nombre"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="email"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Ingresar correo electrónico"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="phone"
+                    >Teléfono</label
+                  >
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="phone"
+                    name="phone"
+                    type="phone"
+                    placeholder="Ingresar teléfono"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="company"
+                    >Empresa</label
+                  >
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Nombre de la empresa"
+                  />
+                </div>
+
+                <input
+                  type="submit"
+                  class="w-full mt-2 mb-4 p-2 rounded-xl bg-purple-500 hover:bg-purple-700 duration-75 ease-in-out transition-colors text-white uppercase font-bold"
+                  value="Añadir cliente"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="js/newClient.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientLink - Administrador de clientes</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="min-h-100 bg-gray-200">
+    <div class="md:flex min-h-screen md:align-top">
+      <aside class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-purple-500 px-5 py-10">
+        <h1 class="uppercase text-white tracking-wide text-2xl font-bold mt-2">
+          ClientLink 
+        </h1>
+        <p class="mt-10 text-white">
+          Administra tus clientes
+        </p>
+        <nav class="mt-8">
+          <a
+            href="index.html"
+            class="rounded px-3 py-1 text-white block hover:bg-purple-700 transition-colors duration-700 ease-in-out"
+            >Clientes</a
+          >
+          <a
+            href="newClient.html"
+            class="mt-2 rounded px-3 py-1 text-white block hover:bg-purple-700 transition-colors duration-700 ease-in-out"
+            >Nuevo Cliente</a
+          >
+        </nav>
+      </aside>
+      <!--sidebar-->
+      <main class="md:w-3/5 xl:w-4/5 px-5 py-10 bg-gray-200">
+        <h2 class="text-3xl font-light text-center">Clientes</h2>
+
+        <div class="flex flex-col mt-10">
+          <div class="py-2 overflow-x-auto">
+            <div
+              class="align-middle inline-block min-w-full shadow overflow-hidden sm:rounded-lg border-b border-gray-200"
+            >
+              <table class="min-w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th
+                      class="px-6 py-3 border-b border-gray-200 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"
+                    >
+                      Nombre Cliente
+                    </th>
+                    <th
+                      class="px-6 py-3 border-b border-gray-200 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"
+                    >
+                      Teléfono
+                    </th>
+                    <th
+                      class="px-6 py-3 border-b border-gray-200 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"
+                    >
+                      Empresa
+                    </th>
+                    <th
+                      class="px-6 py-3 border-b border-gray-200 text-left text-xs leading-4 font-medium text-gray-600 uppercase tracking-wider"
+                    >
+                      Acciones
+                    </th>
+                  </tr>
+                </thead>
+                <tbody id="customer-list" class="bg-white"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
