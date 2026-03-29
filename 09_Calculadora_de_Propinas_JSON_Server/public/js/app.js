@@ -1,0 +1,1 @@
+import{initOrderListener}from"./core/orderLogic.js";function startApp(){initOrderListener()}document.addEventListener("DOMContentLoaded",startApp);
