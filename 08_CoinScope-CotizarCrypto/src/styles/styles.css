@@ -328,6 +328,7 @@ p {
 .results-card__highlight {
   color: var(--white-color);
   font-weight: 700;
+  text-align: right;
 }
 
 /* FOOTER */

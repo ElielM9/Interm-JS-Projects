@@ -4,24 +4,26 @@
 import { appState } from "../core/state.js";
 import { renderCategoryFilter, renderMenu } from "../components/menuUI.js";
 
-export function loadMenu() {
+export async function loadMenu() {
   const URL_MENU = `http://localhost:3000/menu`;
 
-  fetch(URL_MENU)
-    .then((response) => response.json())
-    .then((data) => {
-      // Asignar los datos al estado global de la app
-      appState.dishes = data.dishes;
-      appState.categories = data.categories;
+  try {
+    const response = await fetch(URL_MENU);
+    const data = await response.json();
 
-      // Destructuring del estado de la app
-      const { dishes, categories } = appState;
+    // Asignar los datos al estado global de la app
+    appState.dishes = data.dishes;
+    appState.categories = data.categories;
 
-      // Función para llenar el filtro de categorías
-      renderCategoryFilter(categories);
+    // Destructuring del estado de la app
+    const { dishes, categories } = appState;
 
-      // Función para renderizar el Menú
-      renderMenu(dishes, categories);
-    })
-    .catch((error) => console.error(error));
+    // Función para llenar el filtro de categorías
+    renderCategoryFilter(categories);
+
+    // Función para renderizar el Menú
+    renderMenu(dishes, categories);
+  } catch (error) {
+    console.error(error);
+  }
 }
