@@ -1,0 +1,26 @@
+{
+  "clients": [
+    {
+      "name": "Alina Navarro",
+      "email": "alina@correo.com",
+      "phone": "123456789",
+      "company": "csdafasf",
+      "id": "1dbDhoqlqI8"
+    },
+    {
+      "name": "Robin",
+      "email": "robin@correo.com",
+      "phone": "23534255",
+      "company": "Company.inc",
+      "id": "geVylx3aQy0"
+    },
+    {
+      "name": "Eliel",
+      "email": "eliel@correo.com",
+      "phone": "8331012245",
+      "company": "Core.inc",
+      "id": "leqTGOZkFa8"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

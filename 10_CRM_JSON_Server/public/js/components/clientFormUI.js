@@ -1,0 +1,2 @@
+import{validateEditForm}from"../core/logic.js";export function renderClientForm(e){const{name:o,email:t,phone:r,company:u,id:l}=e,a=document.querySelector("#name"),n=document.querySelector("#email"),c=document.querySelector("#phone"),m=document.querySelector("#company"),d=document.querySelector("#id");a.value=o,n.value=t,c.value=r,m.value=u,d.value=l;document.querySelector("#form").addEventListener("submit",e=>{e.preventDefault();const o=validateEditForm(a.value,n.value,c.value,m.value,d.value);o&&showAlert(o)})}
+//# sourceMappingURL=clientFormUI.js.map

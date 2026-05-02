@@ -1,0 +1,2 @@
+const API_URL="http://localhost:4000/clients";export const newClient=async t=>{try{await fetch(API_URL,{method:"POST",body:JSON.stringify(t),headers:{"Content-Type":"application/json"}}),window.location.href="index.html"}catch(t){console.error(t)}};export const getClients=async()=>{try{const t=await fetch(API_URL);return await t.json()}catch(t){console.error(t)}};
+//# sourceMappingURL=clientsApi.js.map

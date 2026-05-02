@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClientLink | Editar cliente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div
+      class="md:flex min-h-screen bg-gray-50 md:align-top font-sans text-gray-900"
+    >
+      <aside
+        class="md:w-2/5 lg:w-2/5 xl:w-1/5 bg-gradient-to-b from-purple-800 to-purple-600 px-6 py-10 shadow-xl z-10 text-white"
+      >
+        <div class="flex items-center gap-3 mb-8">
+          <svg
+            class="w-8 h-8 text-purple-200"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+            ></path>
+          </svg>
+          <h1 class="uppercase tracking-wider text-2xl font-black">
+            ClientLink
+          </h1>
+        </div>
+
+        <p
+          class="text-xs text-purple-200 mb-8 font-semibold tracking-widest uppercase"
+        >
+          Administra tus clientes
+        </p>
+
+        <nav class="space-y-2">
+          <a
+            href="index.html"
+            class="flex items-center gap-3 rounded-lg px-4 py-3 text-white font-medium hover:bg-white/30 transition-all duration-300 shadow-sm"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+              ></path>
+            </svg>
+            Clientes
+          </a>
+          <a
+            href="newClient.html"
+            class="flex items-center gap-3 rounded-lg px-4 py-3 text-purple-100 font-medium hover:bg-white/10 hover:text-white transition-all duration-300"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 4v16m8-8H4"
+              ></path>
+            </svg>
+            Nuevo Cliente
+          </a>
+        </nav>
+      </aside>
+
+      <main class="md:w-3/5 xl:w-4/5 px-8 py-12">
+        <div class="mb-10 text-center md:text-left">
+          <h2 class="text-3xl font-bold text-gray-800">Editar Cliente</h2>
+          <p class="text-gray-500 mt-1 text-sm">
+            Modifica la información del cliente a continuación.
+          </p>
+        </div>
+
+        <div class="flex flex-col mt-10 items-center">
+          <div
+            class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8 w-10/12 md:w-8/12 lg:w-6/12"
+          >
+            <div
+              class="shadow overflow-hidden sm:rounded-lg border-b border-gray-200"
+            >
+              <form id="form" class="bg-white p-3">
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="name"
+                  >
+                    Nombre
+                  </label>
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Ingresar nombre"
+                  />
+                </div>
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="email"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Ingresar correo electrónico"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="phone"
+                    >Teléfono</label
+                  >
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="phone"
+                    name="phone"
+                    type="phone"
+                    placeholder="Ingresar teléfono"
+                  />
+                </div>
+
+                <div class="mb-4">
+                  <label
+                    class="block text-gray-700 text-sm font-bold mb-2"
+                    for="company"
+                    >Empresa</label
+                  >
+                  <input
+                    class="appearance-none border rounded-xl w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                    id="company"
+                    name="company"
+                    type="text"
+                    placeholder="Nombre de la empresa"
+                  />
+                </div>
+                <input type="text" id="id" name="id" hidden value="" />
+
+                <input
+                  type="submit"
+                  class="w-full mt-2 mb-4 p-2 rounded-xl bg-purple-500 hover:bg-purple-700 duration-75 ease-in-out transition-colors text-white uppercase font-bold"
+                  value="Actualizar cliente"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./js/edition.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+import{validateForm}from"../core/logic.js";import{showAlert}from"../utils/domUtils.js";export function renderNewClientForm(){document.querySelector("#form").addEventListener("submit",e=>{e.preventDefault();const o=document.querySelector("#name").value,t=document.querySelector("#email").value,r=document.querySelector("#phone").value,l=document.querySelector("#company").value,m=validateForm(o,t,r,l);m&&showAlert(m)})}
+//# sourceMappingURL=newClientFormUI.js.map
