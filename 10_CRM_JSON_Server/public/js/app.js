@@ -1,2 +1,2 @@
-import{showClients}from"./components/clientsUI.js";function startApp(){showClients()}document.addEventListener("DOMContentLoaded",startApp);
+import{renderClientForm}from"./components/clientFormUI.js";import{showClients}from"./components/clientsUI.js";import{loadClientData}from"./core/logic.js";const routes={"index.html":showClients,"new-client.html":renderClientForm,"edition.html":loadClientData};function startApp(){const t=window.location.pathname.split("/").pop()||"index.html",n=routes[t];n?n():console.error(`No se encontró una función para la página: ${t}`)}document.addEventListener("DOMContentLoaded",startApp);
 //# sourceMappingURL=app.js.map

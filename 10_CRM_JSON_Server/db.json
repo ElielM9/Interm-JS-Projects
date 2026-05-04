@@ -20,6 +20,20 @@
       "phone": "8331012245",
       "company": "Core.inc",
       "id": "leqTGOZkFa8"
+    },
+    {
+      "name": "Jesus",
+      "email": "jesus@ejemplo.com",
+      "phone": "10111111",
+      "company": "fsdfsdf",
+      "id": "ihSEA-kx9nM"
+    },
+    {
+      "name": "Janeth Hernández",
+      "email": "janeth@correo.com",
+      "phone": "13541452145",
+      "company": "sdfafas",
+      "id": "Yczn2npNAQM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
